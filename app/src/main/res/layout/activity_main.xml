@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/onnu"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp">
+
+        <Button
+            android:id="@+id/listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Listen" />
+
+        <Button
+            android:id="@+id/listDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/listen"
+            android:text="List devices" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/listDevices"
+            android:padding="18dp"
+            android:text="Status" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="326dp"
+        android:layout_height="171dp"
+        android:layout_below="@+id/onnu"
+        android:layout_marginTop="5dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="17dp"
+        android:text="Message" />
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="8dp"
+        android:text="START" />
+
+
+
+
+</RelativeLayout>
